@@ -1,12 +1,12 @@
 # dependencies
-/node_modules/
-
-# next.js
-/.next/
-
-# local env files
-.env*.local
-.env
-
-# IDE
-.idea
+#/node_modules/
+#
+## next.js
+#/.next/
+#
+## local env files
+#.env*.local
+#.env
+#
+## IDE
+#.idea
