@@ -1,4 +1,3 @@
-import {sqr} from "@/lib/utils";
 import {Card, CardContent} from "@/components/ui/card";
 import {Table, TableBody, TableCell} from "@/components/ui/table";
 import {Button} from "@/components/ui/button";
