@@ -30,13 +30,16 @@ export default function CentralGame(
                             {board.map((cell, index) => (
                                 <TableCell key={index} className="p-1">
                                     <Button
-                                        className="w-10 h-10"
+                                        className={`w-10 h-10 ${
+                                            cell === 'x' ? 'bg-destructive/50' :
+                                                cell === 'o' ? 'bg-blue-600/50' : ''}`}
                                         variant="ghost"
                                         onClick={() => markCell(index)}
                                         disabled={cell !== null}
                                     >
                                         {cell === 'x' ? <X strokeWidth="4px" size="24" className="text-destructive"/> :
-                                            cell === 'o' ? <Circle strokeWidth="4px" size="24" className="text-blue-600"/> : null}
+                                            cell === 'o' ?
+                                                <Circle strokeWidth="4px" size="24" className="text-blue-600"/> : null}
                                     </Button>
                                 </TableCell>
                             ))}
